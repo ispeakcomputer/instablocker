@@ -11,9 +11,8 @@ class Instablocker():
     def __init__(self):
         opts = Options()
         self.driver = webdriver.Chrome(chrome_options=opts)
-    def login(self, username, password)
-
-password):
+    
+    def login(self, username,password):
         driver = self.driver
         driver.get("https://www.instagram.com/accounts/login/")
         time.sleep(1) 
@@ -33,7 +32,6 @@ password):
         driver = self.driver
         driver.get("https://www.instagram.com/" + target + "/")
         
-
     def block(self, target):
         driver = self.driver
         
@@ -62,7 +60,11 @@ password):
     def refresh(self):
         driver = self.driver
         driver.refresh()
-    
+
+if __name__ == "__main__":
+    username = getpass.getpass("Username: ")
+    password = getpass.getpass("Password: ")
+    target = getpass.getpass("Target: ")
 
     instablocker.go_to_target(target)
     while True:
@@ -72,55 +74,4 @@ password):
             time.sleep(19)
     else: 
         exit()
-
-from selenium.common.exceptions import NoSuchElementException
-import getpass
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-import time
-from datetime import datetime
-from selenium.webdriver.chrome.options import Options
-
-
-class Instablocker():
-    def __init__(self):
-        opts = Options()
-        self.driver = webdriver.Chrome(chrome_options=opts)
-    def login(self, username, password)
-    instablocker.go_to_target(target)
-from selenium.common.exceptions import NoSuchElementException
-import getpass
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-import time
-from datetime import datetime
-from selenium.webdriver.chrome.options import Options
-
-
-class Instablocker():
-    def __init__(self):
-        opts = Options()
-        self.driver = webdriver.Chrome(chrome_options=opts)
-    def login(self, username, password)
-    instablocker.go_to_target(target)
-
-
-from selenium.common.exceptions import NoSuchElementException
-import getpass
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-import time
-from datetime import datetime
-from selenium.webdriver.chrome.options import Options
-
-
-class Instablocker():
-    def __init__(self):
-        opts = Options()
-        self.driver = webdriver.Chrome(chrome_options=opts)
-    def login(self, username, password)
-    instablocker.go_to_target(target)
-
-
-
 
